@@ -1,0 +1,123 @@
+:root{
+    font-size: 62.5%; /* 1rem=10px */
+
+    text-transform: uppercase;
+}
+
+.mb-3.senha {
+    margin-bottom: 0px;
+}
+
+table {
+    background-color: transparent;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+table th,
+table td {
+    padding: 0.75rem;
+    vertical-align: middle;
+}
+
+tbody tr:nth-of-type(odd) {
+    background-color: rgb(179, 208, 255, 0.3)
+}
+
+
+.image-area{
+    width: 34.6rem;
+    height: 45.5rem;
+    padding-top: 5px;
+
+    background-color: #D9D9D9;
+
+    border-radius: 2rem;
+
+    align-items: center;
+}
+
+.image-area img{
+    margin-left: 2.8rem;
+}
+
+.image-area#hamster img{
+    margin-left: 0.5rem;
+}
+
+td{
+    text-align: center;
+}
+
+.nome-produto{
+    font-size: 2.4rem;
+
+    margin-top: 1.2rem;
+}
+
+p.em-estoque{
+    font-size: 2.4rem;
+}
+
+.quantidade-estoque{
+    background-color: #D9D9D9;
+    width: 5.5rem;
+    height: 3.5rem;
+}
+
+.compra{
+    margin-top: 0.8rem;
+}
+
+.botao-compra{
+    background-color: #3CBC00;
+    width: 24.1rem;
+    height: 6.8rem;
+    
+    border-radius: 1rem;
+
+    text-transform: uppercase;
+    color: white;
+    font-size: 4rem;
+
+    margin: 2rem auto;
+    display: block;
+}
+
+.quantidade-compra{
+    background-color: #D9D9D9;
+    width: 8.3rem;
+    height: 6.8rem;
+
+    margin-left: 0.8rem;
+
+    font-size: 4rem;
+
+    text-align: center;
+}
+
+.adm {
+    padding-top: 1rem;
+}
+
+#ver-compras{
+    display: flex;
+    justify-content: center;
+}
+
+#ver-compras #ver-compras-botao{
+    text-decoration: none;
+    text-align: center;
+
+    background-color: #3CBC00;
+    width: 33.2rem;
+    height: 6.8rem;
+    
+    border-radius: 1rem;
+
+    text-transform: uppercase;
+    color: white;
+    font-size: 4rem;
+
+    margin-top: 8.7rem;
+}

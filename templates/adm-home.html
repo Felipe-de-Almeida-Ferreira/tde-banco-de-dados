@@ -1,0 +1,146 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Adm-home
+{% endblock %}
+
+{% block main %}
+<style>
+    :root{
+      font-size: 62.5%; /* 1rem=10px */
+
+      text-transform: uppercase;
+    }
+
+    table{
+      margin-top: 5rem; /* Adjust this value to vertically center the table as per your design */
+      padding-top: rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      height: 100%;
+    }
+
+    table th,
+    table td{
+        padding: 5rem;
+        padding-bottom: 5rem;
+        vertical-align: middle;
+    }
+
+    .image-area{
+        width: 34.6rem;
+        height: 45.5rem;
+        padding-top: 5px;
+
+        background-color: #D9D9D9;
+
+        border-radius: 2rem;
+
+        align-items: center;
+    }
+
+    .image-area img{
+        margin-left: 2.8rem;
+    }
+
+    .image-area#hamster img{
+        margin-left: 0.5rem;
+    }
+
+    td{
+        text-align: center;
+    }
+
+    .nome-produto{
+        font-size: 2.4rem;
+
+        margin-top: 1.2rem;
+    }
+
+    p.em-estoque{
+        font-size: 2.4rem;
+    }
+
+    .quantidade-estoque{
+        background-color: #D9D9D9;
+        width: 5.5rem;
+        height: 3.5rem;
+    }
+
+    .compra{
+        margin-top: 0.8rem;
+    }
+
+    .botao-compra{
+        background-color: #3CBC00;
+        width: 24.1rem;
+        height: 6.8rem;
+        
+        border-radius: 1rem;
+
+        text-transform: uppercase;
+        color: white;
+        font-size: 4rem;
+    }
+
+    .quantidade-compra{
+        background-color: #D9D9D9;
+        width: 8.3rem;
+        height: 6.8rem;
+
+        margin-left: 0.8rem;
+
+        font-size: 4rem;
+
+        text-align: center;
+    }
+  </style>
+
+  <table>
+    <thead>
+      <!--<tr>
+        <th></th>
+        <th></th>
+        <th></th>
+      </tr>
+    </thead>-->
+    <tbody>
+      <tr>
+        <td>
+          <div class="image-area" id="cachorro">
+            <img src="static\Ração de cachorro.png" alt="ração de cachorro" width="auto" height="450px">
+          </div>
+          <p class="nome-produto">Ração de cachorro</p>
+          <div class="estoque">
+            <p class="em-estoque">Em estoque: <span class="quantidade-estoque">{{ cachorro }}</span></p>
+          </div>
+        </td>
+        <td>
+          <div class="image-area" id="gato">
+            <img src="static\ração gato.png" alt="ração de cachorro" width="auto" height="450px">
+          </div>
+          <p class="nome-produto">Ração de gato</p>
+          <div class="estoque">
+            <p class="em-estoque">Em estoque: <span class="quantidade-estoque">{{ gato }}</span></p>
+          </div>
+        </td>
+        <td>
+          <div class="image-area" id="hamster">
+            <img src="static\ração hamster.png" alt="ração de cachorro" width="auto" height="450px">
+          </div>
+          <p class="nome-produto">Ração de hamster</p>
+          <div class="estoque">
+            <p class="em-estoque">Em estoque: <span class="quantidade-estoque">{{ hamster }}</span></p>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!--<div id="ver-compras">
+    <a href="/compras" id="ver-compras-botao">ver compras</a>
+  </div>-->
+
+{% endblock %}

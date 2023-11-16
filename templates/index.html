@@ -1,0 +1,58 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Index
+{% endblock %}
+
+{% block main %}
+  <form action="/" method="post">
+    <table>
+        <thead>
+        <!--<tr>
+            <th></th>
+            <th></th>
+            <th></th>
+        </tr>
+        </thead>-->
+        
+        <tbody>
+        <tr>
+            <td>
+                <div class="image-area" id="cachorro">
+                    <img src="static\Ração de cachorro.png" alt="ração de cachorro" width="auto" height="450px">
+                </div>
+                <p class="nome-produto">Ração de cachorro</p>
+                <div class="estoque">
+                    <p class="em-estoque">Em estoque <span class="quantidade-estoque">{{ cachorro }}</span></p>
+                </div>
+                <input type="number" class="quantidade-compra" name="quantidade-cachorro" min="0" max="{{ cachorro }}" value="0"></input>
+            </td>
+            <td>
+                <div class="image-area" id="gato">
+                    <img src="static\ração gato.png" alt="ração de cachorro" width="auto" height="450px">
+                </div>
+                <p class="nome-produto">Ração de gato</p>
+                <div class="estoque">
+                    <p class="em-estoque">Em estoque <span class="quantidade-estoque">{{ gato }}</span></p>
+                </div>
+                <input type="number" class="quantidade-compra" name="quantidade-gato" min="0" max="{{ gato }}" value="0"></input>
+            
+            </td>
+            <td>
+                <div class="image-area" id="hamster">
+                    <img src="static\ração hamster.png" alt="ração de cachorro" width="auto" height="450px">
+                </div>
+                <p class="nome-produto">Ração de hamster</p>
+                <div class="estoque">
+                    <p class="em-estoque">Em estoque <span class="quantidade-estoque">{{ hamster }}</span></p>
+                </div>
+                <input type="number" class="quantidade-compra" name="quantidade-hamster" min="0" max="{{ hamster }}" value="0"></input>
+            
+            </td>
+        </tr>
+        </tbody>
+    </table>
+
+    <input type="submit" class="botao-compra" value="Comprar"></input>
+  </form>
+{% endblock %}

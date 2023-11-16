@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Compras
+{% endblock %}
+
+{% block main %}
+    <h2>Histórico de compras</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Cliente</th>
+                <th>Endereço</th>
+                <th>Data</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            {% for item in itens %}
+            <tr>
+                <td>{{ item.cliente[0] }}</td>
+                <td> {{item.endereco}} </td>
+                <td> {{item.data}} </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}
